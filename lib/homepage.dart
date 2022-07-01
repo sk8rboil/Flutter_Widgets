@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, unnecessary_brace_in_string_interps
+// ignore_for_file: prefer_const_constructors, unnecessary_brace_in_string_interps, non_constant_identifier_names, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 
@@ -12,34 +12,73 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  DateTime date = DateTime.now();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: <Widget>[
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/datepicker');
-                    },
-                    child: Text('date picker'),
-                  ),
-                ],
+      body: ListView(
+        children: <Widget>[
+          Wrap(
+            alignment: WrapAlignment.spaceBetween,
+            direction: Axis.horizontal,
+            spacing: 10,
+            runSpacing: 20,
+            children: <Widget>[
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('datepicker'),
+                ),
               ),
-            ),
-          ],
-        ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('timepicker'),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('data1'),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('data1'),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('data1'),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('data1'),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
+
 // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
