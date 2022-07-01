@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widgets/homepage.dart';
 import 'package:flutter_basic_widgets/widgets/datepicker.dart';
+import 'package:flutter_basic_widgets/widgets/timepicker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/homepage': (context) => MyHomePage(title: ''),
         '/datepicker': (context) => MydatePicker(),
+        '/timepicker': (context) => MyTimepicker(),
       },
     );
   }
