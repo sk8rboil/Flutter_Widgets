@@ -22,8 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: <Widget>[
           Wrap(
-            alignment: WrapAlignment.spaceBetween,
-            direction: Axis.horizontal,
+            alignment: WrapAlignment.spaceAround,
             spacing: 10,
             runSpacing: 20,
             children: <Widget>[
@@ -31,7 +30,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   .mybuttoncontainer('Datepicker', context, '/datepicker'),
               Myconstant()
                   .mybuttoncontainer('Timepicker', context, '/timepicker'),
-              Myconstant().mybuttoncontainer('data', context, '/'),
+              Myconstant()
+                  .mybuttoncontainer('date range', context, '/daterange'),
+              Myconstant().mybuttoncontainer('hero', context, '/hero1'),
             ],
           ),
         ],

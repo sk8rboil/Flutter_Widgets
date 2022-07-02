@@ -2,7 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_widgets/homepage.dart';
+import 'package:flutter_basic_widgets/screens/hero_page1.dart';
+import 'package:flutter_basic_widgets/screens/hero_page2.dart';
 import 'package:flutter_basic_widgets/widgets/datepicker.dart';
+import 'package:flutter_basic_widgets/widgets/daterange.dart';
 import 'package:flutter_basic_widgets/widgets/timepicker.dart';
 
 void main() {
@@ -27,6 +30,9 @@ class MyApp extends StatelessWidget {
         '/homepage': (context) => MyHomePage(title: ''),
         '/datepicker': (context) => MydatePicker(),
         '/timepicker': (context) => MyTimepicker(),
+        '/daterange': (context) => Mydaterange(),
+        '/hero1': (context) => Myhero1(),
+        '/hero2': (context) => Myhero2(),
       },
     );
   }
