@@ -10,9 +10,19 @@ class Myhero1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: GestureDetector(
+        onTap: () {
+          Navigator.pushNamed(context, '/hero2');
+        },
         child: Column(
           children: <Widget>[
-            Image.network('src'),
+            Hero(
+              tag: 'image1',
+              child: SizedBox(
+                width: 300,
+                child: Image.network(
+                    'https://cdn.pixabay.com/photo/2018/02/21/05/17/cat-3169476_960_720.jpg'),
+              ),
+            ),
           ],
         ),
       ),
