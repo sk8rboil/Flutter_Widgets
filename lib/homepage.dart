@@ -34,6 +34,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   .mybuttoncontainer('date range', context, '/daterange'),
               Myconstant().mybuttoncontainer('hero', context, '/hero1'),
               Myconstant().mybuttoncontainer('dialog', context, '/dialog'),
+              Myconstant().mybuttoncontainer(
+                  'expansiontile', context, '/expansiontile'),
+              Myconstant()
+                  .mybuttoncontainer('bottomnav', context, '/bottomnav'),
             ],
           ),
         ],
