@@ -6,6 +6,7 @@ import 'package:flutter_basic_widgets/screens/hero_page1.dart';
 import 'package:flutter_basic_widgets/screens/hero_page2.dart';
 import 'package:flutter_basic_widgets/widgets/datepicker.dart';
 import 'package:flutter_basic_widgets/widgets/daterange.dart';
+import 'package:flutter_basic_widgets/widgets/dialog.dart';
 import 'package:flutter_basic_widgets/widgets/timepicker.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/daterange': (context) => Mydaterange(),
         '/hero1': (context) => Myhero1(),
         '/hero2': (context) => Myhero2(),
+        '/dialog': (context) => MyDialog(),
       },
     );
   }

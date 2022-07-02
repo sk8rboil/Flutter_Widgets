@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_widgets/screens/hero_page2.dart';
 
 class Myhero1 extends StatelessWidget {
   const Myhero1({Key? key}) : super(key: key);
@@ -11,7 +12,8 @@ class Myhero1 extends StatelessWidget {
       appBar: AppBar(),
       body: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, '/hero2');
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => Myhero2()));
         },
         child: Column(
           children: <Widget>[
